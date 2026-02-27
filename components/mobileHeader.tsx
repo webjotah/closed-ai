@@ -1,17 +1,12 @@
-import React from 'react';
-
-const menuItems = [
-  { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
-  { label: 'Services', ariaLabel: 'View our services', link: '/services' },
-  { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' },
-];
+import SidebarMobile from './menuMobile';
 
 export default function MobileHeader() {
   return (
-    <div className="w-full p-[7%] flex items-center bg-gray-800 justify-around">
-      <h1 className="text-2xl font-bold text-center">ClosedAI</h1>
-      <h2>teste</h2>
+    <div className="w-full flex items-center justify-between absolute top-5 px-8">
+      <SidebarMobile />
+      <p className="text-3xl font-bold bg-gray-700/40 p-2 rounded-md">
+        ClosedAI
+      </p>
     </div>
   );
 }
